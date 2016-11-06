@@ -1,14 +1,15 @@
 'use strict'
 
 const strmatch = require('..')
-require('should')
+const should = require('should')
 
 describe('str-match', function () {
   it('non detection', function () {
     const str = ''
     const result = strmatch(str, null)
 
-    result.match.should.be.false()
+    result.test.should.be.false()
+    should(result.match).be.undefined()
     result.input.should.be.equal(str)
     result.output.should.be.equal('')
   })
@@ -18,7 +19,8 @@ describe('str-match', function () {
     const regex = /ezzy panther/
     const result = strmatch(str, regex)
 
-    result.match.should.be.true()
+    result.test.should.be.true()
+    result.match.should.be.equal('ezzy panther')
     result.input.should.be.equal(str)
     result.output.should.be.equal('vendo ')
   })

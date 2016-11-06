@@ -4,10 +4,10 @@ const replace = require('lodash.replace')
 const first = require('lodash.first')
 const exists = require('existential')
 
-function strmatch (str, regex) {
-  const match = first(str.match(regex))
-  const output = replace(str, match, '')
-  return { match: exists(match), input: str, output }
+function strmatch (input, regex) {
+  const match = first(input.match(regex))
+  const output = replace(input, match, '')
+  return { test: exists(match), match, input, output }
 }
 
 module.exports = strmatch
