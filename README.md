@@ -10,6 +10,8 @@
 
 > String matcher that output the input string replacing the match.
 
+I created this module for be easy create a pipeline string processor, where the output of a pipe is the input of the next pipe.
+
 ## Install
 
 ```bash
@@ -19,22 +21,36 @@ $ npm install str-match --save
 ## Usage
 
 ```js
-const strmatch = require('.')
-const str = "I'm selling my Macbook Pro"
-const re = /macbook pro/i
+const strmatch = require('.')({ replacement: 'gift' })
 
-console.log(strmatch(str, re))
+const str = "I'm selling my Macbook Pro"
+const regex = /selling/i
+const detection = strmatch(str, regex)
+
+console.log(detection)
 // {
 //  test: true,
 //  match: 'Macbook Pro',
 //  input: 'I\'m selling my Macbook Pro',
-//  output: 'I\'m selling my '
+//  output: 'I\'m gift my Macbook Pro'
 //  }
 ```
 
 ## API
 
-### strmatch(str, regex)
+### .constructor([opts])
+
+#### opts
+
+### opts.flags
+
+Type: `string`<br>
+Default: `''`
+
+### opts.replacement
+
+Type: `string`<br>
+Default: `''`
 
 #### str
 
