@@ -42,15 +42,17 @@ console.log(detection)
 
 #### opts
 
-### opts.flags
+##### opts.flags
 
 Type: `string`<br>
 Default: `''`
 
-### opts.replacement
+##### opts.replacement
 
 Type: `string`<br>
 Default: `''`
+
+### strmatch(str, regex)
 
 #### str
 
