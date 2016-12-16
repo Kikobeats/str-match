@@ -4,6 +4,20 @@ const strmatch = require('..')
 const should = require('should')
 
 describe('str-match', function () {
+  describe('general', function () {
+    it('escape', function () {
+      const matcher = strmatch()
+      const str = '150€)'
+      const regex = /([0-9]+[,.'])*[0-9]+[ ]?[€eE](\W|\s|$)/
+      const result = matcher(str, regex)
+
+      result.test.should.be.true()
+      result.match.should.be.equal('150€)')
+      result.input.should.be.equal('150€)')
+      result.output.should.be.equal('')
+    })
+  })
+
   describe('non options', function () {
     const matcher = strmatch()
 
