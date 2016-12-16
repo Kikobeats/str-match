@@ -1,3 +1,10 @@
+<a name="2.1.0"></a>
+# 2.1.0 (2016-12-16)
+
+* Add escape string regexp support ([97bec18](https://github.com/kikobeats/str-match/commit/97bec18))
+
+
+
 <a name="2.0.0"></a>
 # 2.0.0 (2016-11-14)
 
