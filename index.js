@@ -1,5 +1,6 @@
 'use strict'
 
+const escapeStringRegexp = require('escape-string-regexp')
 const replace = require('lodash.replace')
 const first = require('lodash.first')
 const exists = require('existential')
@@ -16,7 +17,8 @@ function factory (opts) {
 
   function strmatch (input, regex) {
     const match = first(input.match(regex))
-    const replacer = RegExp(match, flags)
+    const pattern = match && escapeStringRegexp(match)
+    const replacer = RegExp(pattern, flags)
     const output = replace(input, replacer, replacement)
 
     return { test: exists(match), match, input, output }
