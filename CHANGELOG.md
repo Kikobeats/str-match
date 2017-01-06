@@ -1,3 +1,11 @@
+<a name="2.1.1"></a>
+## 2.1.1 (2017-01-06)
+
+* Refactor ([35dd96b](https://github.com/kikobeats/str-match/commit/35dd96b))
+* Tweaks ([7c46a87](https://github.com/kikobeats/str-match/commit/7c46a87))
+
+
+
 <a name="2.1.0"></a>
 # 2.1.0 (2016-12-16)
 
