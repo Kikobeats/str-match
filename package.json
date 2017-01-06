@@ -17,9 +17,23 @@
     "url": "https://github.com/Kikobeats/str-match/issues"
   },
   "keywords": [
-    "string",
+    "all",
+    "global",
+    "many",
     "match",
-    "replace"
+    "matches",
+    "modify",
+    "multiple",
+    "needle",
+    "replace",
+    "replacement",
+    "replacer",
+    "search",
+    "str",
+    "string",
+    "sub-string",
+    "substring",
+    "text"
   ],
   "dependencies": {
     "escape-string-regexp": "~1.0.5",
