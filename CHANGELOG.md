@@ -1,3 +1,10 @@
+<a name="2.1.2"></a>
+## 2.1.2 (2017-07-01)
+
+* Add replacement test ([6f623f5](https://github.com/kikobeats/str-match/commit/6f623f5))
+
+
+
 <a name="2.1.1"></a>
 ## 2.1.1 (2017-01-06)
 
