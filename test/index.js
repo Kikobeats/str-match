@@ -9,10 +9,12 @@ describe('str-match', function () {
     const str = ''
     const result = matcher(str, null)
 
-    result.test.should.be.false()
-    should(result.match).be.undefined()
-    result.input.should.be.equal(str)
-    result.output.should.be.equal('')
+    should(result).be.eql({
+      test: false,
+      match: undefined,
+      input: '',
+      output: ''
+    })
   })
 
   it('escape regex pattern', function () {
@@ -21,22 +23,26 @@ describe('str-match', function () {
     const regex = /([0-9]+[,.'])*[0-9]+[ ]?[€eE](\W|\s|$)/
     const result = matcher(str, regex)
 
-    result.test.should.be.true()
-    result.match.should.be.equal('150€)')
-    result.input.should.be.equal('150€)')
-    result.output.should.be.equal('')
+    should(result).be.eql({
+      test: true,
+      match: '150€)',
+      input: '150€)',
+      output: ''
+    })
   })
 
-  it('get substring from a match', function () {
+  it('apply transformations', function () {
     const matcher = strmatch()
     const str = 'vendo ezzy panther'
     const regex = /ezzy panther/
     const result = matcher(str, regex)
 
-    result.test.should.be.true()
-    result.match.should.be.equal('ezzy panther')
-    result.input.should.be.equal(str)
-    result.output.should.be.equal('vendo ')
+    should(result).be.eql({
+      test: true,
+      match: 'ezzy panther',
+      input: 'vendo ezzy panther',
+      output: 'vendo '
+    })
   })
 
   describe('options', function () {
@@ -46,10 +52,30 @@ describe('str-match', function () {
       const regex = /1984/
       const result = matcher(str, regex)
 
-      result.test.should.be.true()
-      result.match.should.be.equal('1984')
-      result.input.should.be.equal(str)
-      result.output.should.be.equal('back to , my  friend')
+      should(result).be.eql({
+        test: true,
+        match: '1984',
+        input: 'back to 1984, my 1984 friend',
+        output: 'back to , my  friend'
+      })
+    })
+
+    it('replacement', function () {
+      const matcher = strmatch({
+        replacement: value => value.toLowerCase(),
+        flag: ''
+      })
+      const str = '<meta hello="World" />'
+      const regex = /\w*="\w*"/
+
+      const result = matcher(str, regex)
+
+      should(result).be.eql({
+        test: true,
+        match: 'hello="World"',
+        input: '<meta hello="World" />',
+        output: '<meta hello="world" />'
+      })
     })
   })
 })
