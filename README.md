@@ -1,7 +1,5 @@
 # str-match
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/Kikobeats/str-match.svg)](https://greenkeeper.io/)
-
 ![Last version](https://img.shields.io/github/tag/Kikobeats/str-match.svg?style=flat-square)
 [![Build Status](https://img.shields.io/travis/Kikobeats/str-match/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/str-match)
 [![Coverage Status](https://img.shields.io/coveralls/Kikobeats/str-match.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/str-match)
