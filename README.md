@@ -21,7 +21,7 @@ $ npm install str-match --save
 ## Usage
 
 ```js
-const strmatch = require('.')({ replacement: 'gift' })
+const strmatch = require('str-match')({ replacement: 'gift' })
 
 const str = "I'm selling my Macbook Pro"
 const regex = /selling/i
