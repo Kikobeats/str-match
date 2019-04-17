@@ -47,7 +47,7 @@ describe('str-match', function () {
 
   describe('options', function () {
     it('flags', function () {
-      const matcher = strmatch({flags: 'g'})
+      const matcher = strmatch({ flags: 'g' })
       const str = 'back to 1984, my 1984 friend'
       const regex = /1984/
       const result = matcher(str, regex)

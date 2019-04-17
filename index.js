@@ -13,7 +13,7 @@ const DEFAULTS = {
 }
 
 function factory (opts) {
-  const {replacement, flags} = Object.assign({}, DEFAULTS.OPTS, opts)
+  const { replacement, flags } = Object.assign({}, DEFAULTS.OPTS, opts)
 
   function strmatch (input, regex) {
     const matches = input.match(regex)
