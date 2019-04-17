@@ -1,3 +1,16 @@
+<a name="2.1.3"></a>
+## 2.1.3 (2019-04-17)
+
+* fix: linter ([60e4f70](https://github.com/kikobeats/str-match/commit/60e4f70))
+* fix(package): update escape-string-regexp to version 2.0.0 ([0768183](https://github.com/kikobeats/str-match/commit/0768183))
+* Update README.md ([0ae5e26](https://github.com/kikobeats/str-match/commit/0ae5e26))
+* Update README.md ([77a9054](https://github.com/kikobeats/str-match/commit/77a9054))
+* Update README.md ([92e0997](https://github.com/kikobeats/str-match/commit/92e0997))
+* docs(readme): add Greenkeeper badge ([dc5dbc9](https://github.com/kikobeats/str-match/commit/dc5dbc9))
+* docs(readme): add Greenkeeper badge ([1875317](https://github.com/kikobeats/str-match/commit/1875317))
+
+
+
 <a name="2.1.2"></a>
 ## 2.1.2 (2017-07-01)
 
