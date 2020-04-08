@@ -1,3 +1,10 @@
+## <small>2.1.4 (2020-04-08)</small>
+
+* ci: update travis builds ([ce73340](https://github.com/kikobeats/str-match/commit/ce73340))
+* Bump escape-string-regexp from 2.0.0 to 3.0.0 ([560c16a](https://github.com/kikobeats/str-match/commit/560c16a))
+
+
+
 <a name="2.1.3"></a>
 ## 2.1.3 (2019-04-17)
 
