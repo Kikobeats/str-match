@@ -1,9 +1,14 @@
-## <small>2.1.4 (2020-04-08)</small>
+# Changelog
 
-* ci: update travis builds ([ce73340](https://github.com/kikobeats/str-match/commit/ce73340))
-* Bump escape-string-regexp from 2.0.0 to 3.0.0 ([560c16a](https://github.com/kikobeats/str-match/commit/560c16a))
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### 2.1.5 (2020-04-23)
 
 
+### Bug Fixes
+
+* linter ([60e4f70](https://github.com/kikobeats/str-match/commit/60e4f70e9094d2e01f06d22692b86710f7570396))
+* **package:** update escape-string-regexp to version 2.0.0 ([0768183](https://github.com/kikobeats/str-match/commit/0768183556f714fba09faee2be7622ce7b268f2c))
 
 <a name="2.1.3"></a>
 ## 2.1.3 (2019-04-17)
@@ -54,6 +59,3 @@
 
 * first commit ([89dcfe2](https://github.com/kikobeats/str-match/commit/89dcfe2))
 * Tweaks ([de2eeb2](https://github.com/kikobeats/str-match/commit/de2eeb2))
-
-
-
