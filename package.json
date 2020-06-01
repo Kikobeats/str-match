@@ -95,10 +95,16 @@
       "finepack"
     ]
   },
+  "mocha": {
+    "bail": true,
+    "recursive": true,
+    "reporter": "spec",
+    "slow": 300,
+    "timeout": "120000"
+  },
   "standard": {
-    "globals": [
-      "describe",
-      "it"
+    "env": [
+      "mocha"
     ]
   }
 }
