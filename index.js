@@ -1,7 +1,6 @@
 'use strict'
 
 const escapeStringRegexp = require('escape-string-regexp')
-const replace = require('lodash.replace')
 
 const DEFAULTS = {
   OPTS: {
@@ -19,7 +18,7 @@ function factory (opts) {
     const pattern = match && escapeStringRegexp(match)
     const replacer = RegExp(pattern, flags)
 
-    const output = replace(input, replacer, replacement)
+    const output = input.replace(replacer, replacement)
     const test = match !== undefined && match !== null
 
     return { test, match, input, output }
