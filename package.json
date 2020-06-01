@@ -37,7 +37,6 @@
   ],
   "dependencies": {
     "escape-string-regexp": "~4.0.0",
-    "existential": "~1.0.3",
     "lodash.replace": "~4.1.4"
   },
   "devDependencies": {
