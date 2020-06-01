@@ -2,7 +2,6 @@
 
 const escapeStringRegexp = require('escape-string-regexp')
 const replace = require('lodash.replace')
-const first = require('lodash.first')
 const exists = require('existential')
 
 const DEFAULTS = {
@@ -17,8 +16,7 @@ function factory (opts) {
 
   function strmatch (input, regex) {
     const matches = input.match(regex)
-
-    const match = first(matches)
+    const match = matches ? matches[0] : undefined
     const pattern = match && escapeStringRegexp(match)
     const replacer = RegExp(pattern, flags)
 
